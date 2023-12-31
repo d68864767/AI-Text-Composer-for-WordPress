@@ -1,0 +1,27 @@
+{
+    "name": "your-name/ai-text-composer-for-wordpress",
+    "description": "Generates blog post drafts, product descriptions, and other text content directly in your WordPress editor.",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your.email@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AIComposer\\": "src/AIComposer.php",
+            "SEOAnalyzer\\": "src/SEOAnalyzer.php",
+            "ImageSuggester\\": "src/ImageSuggester.php"
+        }
+    },
+    "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    }
+}
